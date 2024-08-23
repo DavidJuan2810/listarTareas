@@ -8,7 +8,7 @@ class Tarea(models.Model):
         ('pendiente','Pendiente')
     ]
     titulo = models.CharField(max_length=100)
-    descripcion = models.CharField(max_length=300)
+    descripcion = models.TextField(max_length=300)
     completado = models.CharField(max_length=100, choices= ESTADO_CHOISES )
 
     def __str__(self):
